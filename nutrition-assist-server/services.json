@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Improve Your Body",
+        "image": "https://i.ibb.co/PcmsQfW/service-1.jpg",
+        "price": 120,
+        "description": "Exercise has many health benefits and research has shown that exercise can even improve the way that we feel about our bodies. There are various ways to measure your body composition. Simple ways include tracking the circumference of body parts and taking progress pictures. You can also buy tools that measure your body fat percentage, but they are often inaccurate."
+
+    },
+    {
+        "title": "Be Proactive",
+        "image": "https://i.ibb.co/DpJ3Fjg/service-2.jpg",
+        "price": 90,
+        "description": "With Care Plan lifestyle, diet, and exercise plans based on your results. The program allows you the inner science. Be Proactive is about taking responsibility for your life. Proactive people recognize that they are “response-able.” They don’t blame circumstances, conditions, or conditioning for their behavior. They know they can choose their behavior. Reactive people, on the other hand, are often affected by their physical environment. They find external sources to blame for their behavior. If the weather is good, they feel good. If it isn’t, it affects their attitude and performance, and they blame the weather."
+    },
+    {
+        "title": "Power Yoga",
+        "image": "https://i.ibb.co/MshcnMN/service-3.jpg",
+        "price": 110,
+        "description":"Nutrition Assist all styles of Yoga. I create workshops and events for yoga to your spiritual practice and knowledge. Power yoga enthusiasts say it enhances stamina, flexibility, posture, and mental focus. Like all physical activities, it also relieves tension2﻿ and releases toxins through sweat. Because it is rigorous, it burns more calories than most traditional forms of yoga and therefore can help with weight loss"
+
+    },
+    {
+        "title": "Improve Metabolism",
+        "image": "https://i.ibb.co/px3NSvz/service-4.jpg",
+        "price": 100,
+        "description": "If you are given 10 years to achieve the success you want in life, probably you may want to spend a year or two to discover yourself. Your metabolism plays a vital role in burning fat, and it's also essential to your body's ability to perform functions. It's a process that involves turning the food you eat into energy, enabling functions such as breathing, circulating blood, controlling body temperature, and digesting food."
+    },
+    {
+        "title": "Meditation",
+        "image": "https://i.ibb.co/2d0fQLs/service5.jpg",
+        "price": 95,
+        "description": "Nutrition Assist shows you how to remove the obstacles the greatest of yourself and living your wildest dreams. Meditation can give you a sense of calm, peace and balance that can benefit both your emotional well-being and your overall health. You can also use it to relax and cope with stress by refocusing your attention on something calming. Meditation can help you learn to stay centered and keep inner peace."
+
+        
+    },
+    {
+        "title": "Lose weight safely",
+        "image": "https://i.ibb.co/X7Xy0JS/service-6.jpg",
+        "price": 99,
+        "description": "You want to drop pounds, now. And you want to do it safely. But how? First, keep in mind that many experts say it’s best to lose. The National Institutes of Health (NIH) recommend a safe rate of weight loss, which is about 1 to 2 pounds per week for a period of six months. In order to lose weight, the NIH recommends cutting back on both fat and carbohydrates (not cutting them out completely) in order to help reduce overall calories."
+    }
+]
