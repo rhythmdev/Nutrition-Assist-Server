@@ -50,13 +50,26 @@ async function run() {
 
         //** get all reviews */
         app.get('/reviews', async (req, res) => {
-            const query = {};
+            let query = {};
+            
+            if(req.query.serviceId){
+                query = {serviceId: req.query.serviceId}
+            }
+
             const cursor = reviewCollection.find(query);
             const reviews = await cursor.toArray();
             res.send(reviews);
             
         })
-       
+        
+       app.get('/reviews/:id', async (req, res) => {
+            const id = req.params.id;
+            const query = {_id: ObjectId(id)};
+            const reviews = await reviewCollection.findOne(query);
+            res.send(reviews);
+        })
+
+
     
 
         // //** add a service */
