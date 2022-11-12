@@ -30,10 +30,18 @@ async function run() {
     app.get("/services", async (req, res) => {
       const query = {};
       const cursor = serviceCollection.find(query);
-      const limitedServices = await cursor.limit(3).sort({ time: 1 }).toArray();
-      const allServices = await serviceCollection.find().sort({time: -1}).toArray();
+      const limitedServices = await serviceCollection
+        .find()
+        .limit(3)
+        .sort({ time: -1 })
+        .toArray();
+      const allServices = await serviceCollection
+        .find()
+        .sort({ time: -1 })
+        .toArray();
       res.send({ limitedServices, allServices });
     });
+
     app.get("/services/:id", async (req, res) => {
       const id = req.params.id;
       const query = { _id: ObjectId(id) };
@@ -56,19 +64,17 @@ async function run() {
         query = { serviceId: req.query.serviceId };
       }
 
-      const cursor = reviewCollection.find(query).sort({date: -1});
+      const cursor = reviewCollection.find(query).sort({ date: -1 });
       const reviews = await cursor.toArray();
       res.send(reviews);
     });
 
-    app.get("/reviews/:id", async(req, res) => {
+    app.get("/reviews/:id", async (req, res) => {
       const id = req.params.id;
-      const query = {_id: ObjectId(id)};
+      const query = { _id: ObjectId(id) };
       const reviews = await reviewCollection.findOne(query);
       res.send(reviews);
-      
-    })
-
+    });
 
     //** get all reviews by user email */
     app.get("/myReviews", async (req, res) => {
@@ -99,13 +105,11 @@ async function run() {
     });
 
     //** add a service */
-    app.post('/addService', async (req, res) => {
-        const service = req.body;
-        const result = await serviceCollection.insertOne(service);
-        res.json(result);
-    })
-
-   
+    app.post("/addService", async (req, res) => {
+      const service = req.body;
+      const result = await serviceCollection.insertOne(service);
+      res.json(result);
+    });
   } finally {
   }
 }
