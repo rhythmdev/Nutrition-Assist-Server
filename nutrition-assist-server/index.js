@@ -30,15 +30,16 @@ async function run() {
     app.get("/services", async (req, res) => {
       const query = {};
       const cursor = serviceCollection.find(query);
-      const limitedServices = await serviceCollection
-        .find()
+      const limitedServices = await cursor
         .limit(3)
         .sort({ time: -1 })
         .toArray();
+
       const allServices = await serviceCollection
         .find()
         .sort({ time: -1 })
         .toArray();
+
       res.send({ limitedServices, allServices });
     });
 
@@ -82,7 +83,7 @@ async function run() {
       if (req.query.email) {
         query = { email: req.query.email };
       }
-      const cursor = reviewCollection.find(query);
+      const cursor = reviewCollection.find(query).sort({date: -1});
       const reviews = await cursor.toArray();
       res.send(reviews);
     });
